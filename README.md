@@ -30,3 +30,11 @@ Basicamente são 3 rotas onde é possível renderizar
 1) a página principal, onde é possível criar um novo produto ou cliente, 
 2) uma página dos Produtos, onde é possível ver todos os produtos, editar ou excluir quaisquer dos produtos
 3) uma página de clientes, onde é possível ver todos os produtos, editar ou excluir quaisquer dos clientes.
+
+# :computer: Tecnologias empregadas:
+
+Front-end:
+- [Axios](https://github.com/axios/axios);
+- [React](https://pt-br.reactjs.org/);
+- [React Dom](https://reactjs.org/docs/react-dom.html);
+- [TypeScript](https://www.typescriptlang.org/);
