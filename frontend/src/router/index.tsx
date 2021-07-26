@@ -5,28 +5,29 @@ import { Clients } from '../pages/clients';
 import { Home } from '../pages/home';
 import { ProductDetail } from '../pages/productDetail';
 import { Products } from '../pages/products';
+import {Wrapper} from './styles';
 
 export const Router = () => {
     return (
-        <>
-        <header>
-            <ul>
-                <li>
-                <Link to="/">
-                    Home
-                </Link>
-                </li>
-                <li>
-                <Link to="/clients">
-                    Clientes
-                </Link>
-                </li>
-                <li>
-                <Link to="/products">
-                    Produtos
-                </Link>
-                </li>
-            </ul>
+        <Wrapper>
+            <header>
+                <ul>
+                    <li>
+                        <Link to="/clients">
+                            Clientes
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/products">
+                            Produtos
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/">
+                            Home
+                        </Link>
+                    </li>
+                </ul>
             </header>
             <Switch>
                 <Route path="/" exact component={Home} />
@@ -35,6 +36,6 @@ export const Router = () => {
                 <Route path="/products/:id" component={ProductDetail} exact/>
                 <Route path="/products/" component={Products} />
             </Switch>
-        </>
+        </Wrapper>
     )
 }
