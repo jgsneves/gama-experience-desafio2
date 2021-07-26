@@ -79,6 +79,7 @@ export const Home = () => {
     return(
         <>
             <h1>Página Inicial</h1>
+            <h2>Para cadastrar um novo produto ou cliente, click em um dos botões abaixo:</h2>
             <button onClick={() => setShowNewProductForm(!showNewProductForm)} type="button">
                 Produto
             </button>
